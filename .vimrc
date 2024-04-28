@@ -25,7 +25,7 @@ noremap ñ :vertical resize 85<CR>
  
 " configuración en inset
 autocmd InsertEnter * set norelativenumber
-" autocmd InsertEnter * IndentLinesDisable
+autocmd InsertEnter * IndentLinesDisable
 
 " configuración en normal
 autocmd InsertLeave * set relativenumber
