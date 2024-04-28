@@ -1,0 +1,9 @@
+# Alias personales
+alias :q='exit'
+
+alias bateria='upower -d | grep'
+alias bat='bateria energy && bateria time && bateria percentage'
+
+alias noGUI='sudo systemctl set-default multi-user.target'
+alias runGUI='sudo systemctl start lightdm'
+alias setGUI='sudo systemctl set-default graphical'
