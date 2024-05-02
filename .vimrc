@@ -13,7 +13,6 @@ au BufEnter * set fo-=c fo-=r fo-=o
 noremap <Space> <Nop>
 noremap <CR> <Nop>
 let mapleader="\<Space>"
-nnoremap <leader>a $a
 nnoremap <leader>q<leader> :Files<CR>
 noremap <C-S-e> :NERDTreeToggle<CR>
 noremap <C-s> :w<CR>
