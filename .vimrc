@@ -13,7 +13,7 @@ au BufEnter * set fo-=c fo-=r fo-=o
 noremap <Space> <Nop>
 noremap <CR> <Nop>
 let mapleader="\<Space>"
-nnoremap <leader>q<leader> :Files<CR>
+noremap <leader>q<leader> :Files<CR>
 noremap <C-S-e> :NERDTreeToggle<CR>
 noremap <C-s> :w<CR>
 
@@ -21,7 +21,10 @@ noremap  <leader><CR> :w<CR>
         \:let $VIM_DIR=expand('%:p')<CR> 
         \:rightbelow vert term<CR> clear && make TARGET=$VIM_DIR <CR>
 noremap ñ :vertical resize 85<CR>
+noremap <leader>va :!emacs --batch '%:p' -f verilog-batch-inject-auto <CR>
+noremap <leader>vd :!emacs --batch '%:p' -f verilog-batch-delete-auto <CR>
  
+
 " configuración en inset
 autocmd InsertEnter * set norelativenumber
 autocmd InsertEnter * IndentLinesDisable
@@ -39,3 +42,5 @@ else
   hi Normal ctermbg=none
   hi ColorColumn ctermbg=red
 endif
+
+

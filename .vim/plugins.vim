@@ -15,5 +15,4 @@ Plug 'dense-analysis/ale'
 "Plug 'vim-scripts/AutoComplPop'
 Plug 'LunarWatcher/auto-pairs'
 Plug 'preservim/nerdtree'
-
 call plug#end()
